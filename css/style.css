@@ -317,6 +317,10 @@
                         margin-right: 40px;
                     }
                     
+                    .project-list li:nth-of-type(4n) {
+                        margin-right: 0;
+                    }
+                    
                     .footer-nav {
                         margin-bottom: 40px;
                         margin-top: 46px;
@@ -325,6 +329,10 @@
                     .search-form p {
                         padding: 0;
                         margin: 0;
+                    }
+                    
+                    .search {
+                        margin-right: 554px;
                     }
                     
                     .services {
@@ -380,6 +388,7 @@
                     .item-partner {
                         position: relative;
                         margin-bottom: 14px;
+                        word-break: break-all;
                     }
                     
                     .item-partner::before {
@@ -431,9 +440,10 @@
                         position: relative;
                     }
                     
-                    .login-li-header {
+                    .compare {
                         margin-left: 40px;
                         margin-right: 1px;
+                        word-break: break-all;
                     }
                     
                     .social-list {
@@ -464,6 +474,7 @@
                     .project-list {
                         display: flex;
                         padding: 0;
+                        flex-wrap: wrap;
                     }
                     
                     .footer-contact {
@@ -519,6 +530,7 @@
                         display: flex;
                         padding: 0;
                         margin-left: 858px;
+                        flex-wrap: wrap;
                     }
                     
                     .delivery-grid-2 {
@@ -537,15 +549,10 @@
                     
                     .service-item-1,
                     .service-item-2,
-                    .service-item-3,
-                    .service-item-4,
-                    .service-item-5,
-                    .service-item-6,
-                    .service-item-7,
-                    .service-item-8,
-                    .service-item-9 {
+                    .service-item-3 {
                         margin-bottom: 38px;
                         margin-left: -58px;
+                        word-break: break-all;
                     }
                     
                     .more-slider {
@@ -558,6 +565,7 @@
                         padding-top: 10px;
                         text-decoration: none;
                         color: inherit;
+                        word-break: break-all;
                     }
                     
                     .more-slider span {
@@ -615,6 +623,8 @@
                     .enter {
                         text-decoration: none;
                         color: inherit;
+                        word-break: break-all;
+                        margin-right: 233px;
                     }
                     
                     .exit {
@@ -636,6 +646,7 @@
                         position: relative;
                         left: 10px;
                         top: 2px;
+                        margin-right: 150px;
                     }
                     
                     .enter-catalog::after {
@@ -716,6 +727,7 @@
                     .grid-catalog {
                         display: flex;
                         margin-bottom: 132px;
+                        flex-wrap: wrap;
                     }
                     
                     .grid-catalog-2 {
@@ -795,12 +807,19 @@
                         letter-spacing: 0.2em;
                     }
                     
+                    .header-item-3 a {
+                        text-decoration: none;
+                        color: inherit;
+                        font-size: 18px;
+                        letter-spacing: 0.2em;
+                    }
+                    
                     .header-item {
                         margin-right: 35px
                     }
                     
                     .catalog-header .header-item:nth-child(2) {
-                        margin-right: 108px;
+                        margin-right: 100px;
                     }
                     
                     .flex {
@@ -840,6 +859,7 @@
                     
                     .catalog-header {
                         display: flex;
+                        flex-wrap: wrap;
                         font-family: Gilroy;
                         font-weight: 800;
                         text-transform: uppercase;
@@ -866,6 +886,7 @@
                         margin: 0;
                         padding: 0;
                         margin-top: 102px;
+                        flex-wrap: wrap;
                     }
                     
                     .more-slider {
@@ -913,6 +934,10 @@
                         font-size: 18px;
                         margin-right: 40px;
                         letter-spacing: 0.05em;
+                    }
+                    
+                    .catalog-list li:nth-of-type(6n) {
+                        margin-right: 0;
                     }
                     
                     .fitnes {
@@ -1155,6 +1180,7 @@
                         padding-top: 10px;
                         top: -10px;
                         left: -23px;
+                        word-break: break-all;
                     }
                     
                     .more span {
@@ -1236,6 +1262,7 @@
                         height: 40px;
                         margin-left: 56px;
                         padding-right: 120px;
+                        word-break: break-all;
                     }
                     
                     .current-service {
@@ -1281,12 +1308,14 @@
                         line-height: 58px;
                         letter-spacing: 0.2em;
                         margin-top: 41px;
+                        word-break: break-all;
                     }
                     
                     .par-delivery {
                         letter-spacing: 0.1em;
                         line-height: 30px;
                         margin-top: -5px;
+                        word-break: break-all;
                     }
                     
                     .about-us h3 {
@@ -1295,6 +1324,7 @@
                         font-size: 47px;
                         line-height: 58px;
                         letter-spacing: 0.2em;
+                        word-break: break-all;
                     }
                     
                     .about-more {
@@ -1307,11 +1337,13 @@
                         font-size: 47px;
                         line-height: 58px;
                         letter-spacing: 0.2em;
+                        word-break: break-all;
                     }
                     
                     .about-us-par-1,
                     .about-us-par-2 {
                         line-height: 28px;
+                        word-break: break-all;
                     }
                     
                     .tr-1 {
@@ -1357,6 +1389,7 @@
                     .contacts p {
                         line-height: 28px;
                         margin-bottom: 39px;
+                        word-break: break-all;
                     }
                     
                     .contacts h4 {
@@ -1366,11 +1399,13 @@
                         line-height: 22px;
                         letter-spacing: 0.2em;
                         text-transform: uppercase;
+                        word-break: break-all;
                     }
                     
                     .write-us a {
                         color: var(--black);
                         text-decoration: none;
+                        word-break: break-all;
                     }
                     
                     .login-item a {
@@ -1467,6 +1502,8 @@
                     .basket {
                         position: relative;
                         top: 2px;
+                        left: 41px;
+                        word-break: break-all;
                     }
                     
                     .enter::after {
@@ -1485,6 +1522,7 @@
                     .footer-enter {
                         position: relative;
                         opacity: 70%;
+                        word-break: break-all;
                     }
                     
                     .footer-enter:hover {
@@ -1539,6 +1577,7 @@
                     .footer-compare {
                         position: relative;
                         opacity: 70%;
+                        word-break: break-all;
                     }
                     
                     .footer-compare:hover {
@@ -1592,6 +1631,7 @@
                     .footer-cont {
                         position: relative;
                         opacity: 70%;
+                        word-break: break-all;
                     }
                     
                     .footer-cont:hover {
@@ -2141,6 +2181,10 @@
                         padding: 0;
                     }
                     
+                    .descript-slider p {
+                        word-break: break-all;
+                    }
+                    
                     .catalog-1 {
                         margin-right: 214px;
                         font-family: Gilroy;
@@ -2153,6 +2197,7 @@
                         margin-left: -5px;
                         margin-top: 1px;
                         position: Absolute;
+                        word-break: break-all;
                     }
                     
                     .catalog-1::after {
@@ -2256,7 +2301,7 @@
                         font-weight: 300;
                         position: absolute;
                         left: 37px;
-                        top: -2px;
+                        top: 3px;
                     }
                     
                     .search-button:focus~.search-submit {
@@ -2282,6 +2327,10 @@
                     }
                     
                     .header-item:hover {
+                        opacity: 60%;
+                    }
+                    
+                    .header-item-3:hover {
                         opacity: 60%;
                     }
                     
@@ -2419,11 +2468,11 @@
                     }
                     
                     .login-button {
-                        display: grid;
-                        grid-template-columns: 2fr 1fr min-content min-content;
+                        display: flex;
                         margin-top: 40px;
                         position: relative;
                         margin-bottom: 50px;
+                        flex-wrap: wrap;
                     }
                     
                     .login-list {
@@ -2434,6 +2483,11 @@
                         width: 1160px;
                         margin: 0 auto;
                         padding: 0 20px;
+                    }
+                    
+                    .container-5 {
+                        width: 1160px;
+                        margin: 0 auto;
                     }
                     
                     .container-4 {
@@ -2456,7 +2510,11 @@
                     }
                     
                     .login-li {
-                        margin-right: 66px;
+                        margin-right: 63px;
+                    }
+                    
+                    .login-li:nth-of-type(3n) {
+                        margin-right: 0;
                     }
                     
                     .containers {
