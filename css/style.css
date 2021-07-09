@@ -50,26 +50,36 @@
                         grid-template-columns: 1.17fr 2fr;
                     }
                     
+                    .sort {
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    
+                    .sort::after {
+                        position: absolute;
+                        content: "";
+                        background-color: var(--basic-gray-light);
+                        width: 80vw;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: -1;
+                    }
+                    
                     .filter-cat {
                         font-family: Gilroy, Arial, sans-serif;
                         font-size: 16px;
                         font-weight: 800;
                         text-transform: uppercase;
                         letter-spacing: 0.1em;
-                        padding: 8px 192px 11px 431px;
+                        margin-top: 25px;
+                        margin-left: 60px;
+                        width: min-content;
                     }
                     
                     .filter-legend {
                         background-color: var(--grey-light);
-                    }
-                    
-                    .flex-cat {
-                        background-color: var( --basic-gray-light);
-                    }
-                    
-                    .filter-head {
-                        background-color: var(--grey-light);
-                        z-index: 100;
                     }
                     
                     .nav-list-current {
@@ -96,12 +106,14 @@
                     
                     .appointment-form {
                         margin-left: 100px;
+                        margin-top: 19px;
                     }
                     
                     .appointment-item label {
                         font-family: Gilroy;
                         font-weight: 800;
                         font-size: 18px;
+                        margin-top: 1px;
                     }
                     
                     .appointment-item input {
@@ -110,6 +122,12 @@
                         padding: 15px 20px 16px 20px;
                         background-color: var(--special-grey);
                         width: 320px;
+                        font-size: 14px;
+                        margin-top: 13px;
+                    }
+                    
+                    .appointment-item-2 {
+                        margin-left: -21px;
                     }
                     
                     .toggle {
@@ -136,6 +154,7 @@
                         padding: 16px 0px 0px 20px;
                         width: 760px;
                         height: 151px;
+                        margin-top: 11px;
                     }
                     
                     .name-form {
@@ -155,8 +174,8 @@
                         border: none;
                         background-color: inherit;
                         position: relative;
-                        top: 4px;
-                        left: 19px;
+                        top: 26px;
+                        left: 0;
                         z-index: 5;
                         width: 200px;
                         padding-left: 6px;
@@ -167,8 +186,8 @@
                         border: none;
                         background-color: inherit;
                         position: relative;
-                        top: 9px;
-                        left: 885px;
+                        top: 20px;
+                        left: 878px;
                         opacity: 50%;
                     }
                     
@@ -251,7 +270,7 @@
                         position: absolute;
                         top: 1218px;
                         left: 473px;
-                        z-index: 5;
+                        z-index: 100;
                     }
                     
                     .project-items-1:hover {
@@ -725,8 +744,12 @@
                     
                     .rectangle {
                         position: relative;
-                        left: 267px;
+                        left: 269px;
                         top: 60px;
+                    }
+                    
+                    .rectangle-1 {
+                        left: 301px;
                     }
                     
                     .grid-catalog {
@@ -795,6 +818,12 @@
                         margin: 0;
                         padding: 0;
                         position: relative;
+                    }
+                    
+                    .catalog-cards {
+                        margin-top: 51px;
+                        margin-left: 29px;
+                        margin-bottom: 81px;
                     }
                     
                     .items-hidden {
@@ -1347,7 +1376,7 @@
                     
                     .filt {
                         display: grid;
-                        grid-template-columns: 0.5fr 1fr;
+                        grid-template-columns: 0.4fr 1fr;
                     }
                     
                     .about-us-par-1,
@@ -1717,15 +1746,16 @@
                         padding: 0;
                         position: absolute;
                         margin-top: 50px;
-                        padding-bottom: 47px;
+                        padding-bottom: 26px;
                         background-color: var(--special-yellow);
                         z-index: 5;
                         padding-right: 374px;
-                        top: 75px;
+                        top: 42px;
                         left: -60px;
                         padding-left: 60px;
                         width: 1160px;
                         box-sizing: border-box;
+                        padding-top: 32px;
                     }
                     
                     .hidden-2 {
@@ -1763,8 +1793,6 @@
                         display: flex;
                         justify-content: space-between;
                     }
-                    
-                    .back-catalog {}
                     
                     .back,
                     .next {
@@ -1946,8 +1974,20 @@
                     }
                     
                     .filter-catalog {
-                        background-color: var(--basic-gray-light);
-                        margin-right: 1px;
+                        padding-right: 57px;
+                        padding-left: 20px;
+                        position: relative;
+                    }
+                    
+                    .filter-catalog::after {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 100vw;
+                        height: 100%;
+                        background: var(--basic-gray-light);
+                        z-index: -1;
                     }
                     
                     .container-10 {
@@ -1961,7 +2001,7 @@
                         font-weight: 800;
                         text-transform: uppercase;
                         letter-spacing: 0.1em;
-                        margin-left: 72px;
+                        margin-left: 70px;
                         margin-top: 25px;
                     }
                     
@@ -1976,11 +2016,32 @@
                     
                     .up-li {
                         margin-top: 5px;
+                        margin-left: 1px;
                     }
                     
-                    .down-li {
-                        margin-top: 4px;
-                        margin-left: -6px;
+                    .nav-list-3 {
+                        margin-right: 1px;
+                    }
+                    
+                    .down {
+                        margin-top: 29px;
+                    }
+                    
+                    .filter-head {
+                        position: relative;
+                        padding-bottom: 9px;
+                        padding-right: 1px;
+                    }
+                    
+                    .filter-head::after {
+                        position: absolute;
+                        content: "";
+                        top: 0;
+                        right: 0;
+                        width: 100vw;
+                        height: 100%;
+                        background: var(--grey-light);
+                        z-index: -1;
                     }
                     
                     .up {
@@ -1990,7 +2051,9 @@
                         background-position: center;
                         width: 12px;
                         height: 12px;
-                        margin-left: 192px;
+                        margin-left: 191px;
+                        margin-top: 29px;
+                        margin-right: 21px;
                     }
                     
                     .color {
@@ -2296,7 +2359,7 @@
                     }
                     
                     .hidden {
-                        margin-top: 30px;
+                        margin-top: 51px;
                     }
                     
                     .hidden-2 {
@@ -2322,6 +2385,10 @@
                     
                     .item-list li:nth-child(1) {
                         margin-top: 2px;
+                    }
+                    
+                    .item-list:nth-child(3) {
+                        margin-left: -57px;
                     }
                     
                     .kvadro {
@@ -2513,6 +2580,7 @@
                         top: 239px;
                         left: 880px;
                         z-index: 100;
+                        width: 150px;
                     }
                     
                     .table {
