@@ -632,6 +632,7 @@
                     
                     .main-navigation {
                         position: relative;
+                        z-index: 101;
                     }
                     
                     .login-list-footer .login-li {
@@ -723,6 +724,10 @@
                         display: none;
                     }
                     
+                    .body-2 {
+                        overflow-x: hidden;
+                    }
+                    
                     .page-body {
                         display: grid;
                         grid-template-rows: min-content 1fr min-content;
@@ -731,7 +736,6 @@
                         font-size: 15px;
                         margin: 0;
                         padding: 0;
-                        overflow: hidden;
                     }
                     
                     .page-number {
@@ -740,6 +744,7 @@
                         left: 510px;
                         margin-bottom: 35px;
                         margin-top: -117px;
+                        z-index: 100;
                     }
                     
                     .rectangle {
@@ -1333,6 +1338,10 @@
                     
                     .page-body ul {
                         list-style: none
+                    }
+                    
+                    .slider-img {
+                        z-index: 100;
                     }
                     
                     .head-delivery {
@@ -2566,7 +2575,7 @@
                     .descript-slider {
                         margin-left: 19px;
                         margin-top: -85px;
-                        z-index: 2;
+                        z-index: 100;
                     }
                     
                     .slider-more {
